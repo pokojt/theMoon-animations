@@ -199,9 +199,6 @@ html {
     left: 43%;
     font-weight: bold;
     color: #741C58; }
-    .navbar #menuLink:hover {
-      letter-spacing: 2px;
-      -webkit-transition: letter-spacing .3s linear; }
   @media screen and (max-width: 985px) {
     .navbar li:nth-child(odd) {
       display: none; } }
@@ -236,6 +233,37 @@ html {
   @media screen and (max-width: 505px) {
     .mobileNav {
       display: inline-block; } }
+
+#menuLink {
+  letter-spacing: 0; }
+
+#menuLink:hover,
+#menuLink:active {
+  letter-spacing: 5px; }
+
+#menuLink:after,
+#menuLink:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(116, 28, 88, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0; }
+
+#menuLink:hover:after,
+#menuLink:hover:before {
+  backface-visibility: hidden;
+  border-color: #741C58;
+  transition: width 350ms ease-in-out;
+  width: 10%; }
+
+#menuLink:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 10%; }
 
 .menu {
   text-align: left;

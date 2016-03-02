@@ -21,10 +21,13 @@
   #menuLink {
     @include position(relative, null null 50px 43%);
     @include text($weight:bold, $color: $spacePurple);
-    &:hover {
-      letter-spacing: 2px;
-      -webkit-transition: letter-spacing .3s linear;
-    }
+    // &:hover {
+    //   letter-spacing: 2px;
+    //   border: 1px solid rgba(#fff, 0);
+    //   backface-visibility: hidden;
+    //   transition: all 280ms ease-in-out;
+    //   -webkit-transition: letter-spacing .3s linear;
+    // }
   }
   @media screen and #{$fullWidth} {
     li:nth-child(odd) {
@@ -62,6 +65,42 @@
   @media screen and #{$mobile} {
     display: inline-block;
   }
+}
+
+#menuLink {
+    letter-spacing: 0;
+}
+
+#menuLink:hover,
+#menuLink:active {
+  letter-spacing: 5px;
+}
+
+#menuLink:after,
+#menuLink:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba($spacePurple, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+#menuLink:hover:after,
+#menuLink:hover:before {
+  backface-visibility: hidden;
+  border-color: $spacePurple;
+  transition: width 350ms ease-in-out;
+  width: 10%;
+}
+
+#menuLink:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 10%;
 }
 
 
