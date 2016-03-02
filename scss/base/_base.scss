@@ -1,0 +1,270 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  @extend %centeredText;
+  background: $moonGray;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+// Styles for grid page //
+
+.page2Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  .header {
+    margin-bottom: 5%;
+    h1 {
+      font-size: 6em;
+    }
+  }
+}
+
+
+.galleryWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  .gridItem {
+    flex: 1 1 auto;
+    max-width: 28%;
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+}
+
+.gridItem{
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 0 5px #ddd;
+  margin: 1em;
+}
+
+.gridItem img{
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.gridItem:hover img{
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+          transform: scale3d(1.2, 1.2, 1);
+}
+
+
+section.apresenteichan {
+  width: 100%;
+  height: 30vh;
+  background-image: url(https://static.pexels.com/photos/26152/pexels-photo.jpg);
+  background-image: -webkit-radial-gradient(center ,ellipse, #ffffff 0%, #dadada 100%);
+  background-image: -moz-radial-gradient(center ,ellipse, #ffffff 0%, #dadada 100%);
+  background-image: -o-radial-gradient(center ,ellipse, #ffffff 0%, #dadada 100%);
+  background-image: radial-gradient(ellipse at center, #ffffff 0%, #dadada 100%);
+}
+section.apresenteichan a {
+  width: 634px;
+  height: 140px;
+  font-size: 10em;
+  font-weight: bold;
+  line-height: 350px;
+  background-repeat: no-repeat;
+  background-image: url(https://static.pexels.com/photos/41315/africa-african-animal-cat-41315.jpeg), url(https://static.pexels.com/photos/52903/pexels-photo-52903.jpeg), url(https://static.pexels.com/photos/26644/pexels-photo-26644.jpg),url(https://static.pexels.com/photos/2162/sky-space-dark-galaxy.jpg), url(https://static.pexels.com/photos/52903/pexels-photo-52903.jpeg), url(https://static.pexels.com/photos/21261/pexels-photo.jpg), url(https://static.pexels.com/photos/4709/trees-countryside-green-chill.jpg), url(https://static.pexels.com/photos/6431/food-sweet-cake-glace-icing.jpg);
+
+  background-size: 100% auto,
+				100% auto,
+				100% auto,
+				100% auto,
+				100% auto,
+				100% auto,
+				100% auto,
+				100% auto;
+  background-position: center 0, center 356.45095168px, center 712.90190337px, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+}
+
+section.apresenteichan a:hover {
+  -webkit-animation: chngbg 0.8s infinite;
+  -moz-animation: chngbg 0.8s infinite;
+  -ms-animation: chngbg 0.8s infinite;
+  animation: chngbg 0.8s infinite;
+}
+
+@-moz-keyframes chngbg {
+  0% {
+    background-position: center 0, center 356.45095168px, center 712.90190337px, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  12.4% {
+    background-position: center 0, center 356.45095168px, center 712.90190337px, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  12.5% {
+    background-position: center -356.45095168px, center 0, center 712.90190337px, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  24.9% {
+    background-position: center -356.45095168px, center 0, center 712.90190337px, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  25% {
+    background-position: center -712.90190337px, center -356.45095168px, center 0, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  37.4% {
+    background-position: center -712.90190337px, center -356.45095168px, center 0, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  37.5% {
+    background-position: center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  49.9% {
+    background-position: center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  50% {
+    background-position: center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  62.4% {
+    background-position: center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  62.5% {
+    background-position: center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 2138.7057101px, center 2495.15666179px;
+  }
+  74.9% {
+    background-position: center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 2138.7057101px, center 2495.15666179px;
+  }
+  75% {
+    background-position: center -2138.7057101px, center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 2495.15666179px;
+  }
+  87.4% {
+    background-position: center -2138.7057101px, center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 2495.15666179px;
+  }
+  88.5% {
+    background-position: center -2495.15666179px, center -2138.7057101px, center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0;
+  }
+  100% {
+    background-position: center -2495.15666179px, center -2138.7057101px, center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0;
+  }
+}
+@-webkit-keyframes chngbg {
+  0% {
+    background-position: center 0, center 356.45095168px, center 712.90190337px, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  12.4% {
+    background-position: center 0, center 356.45095168px, center 712.90190337px, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  12.5% {
+    background-position: center -356.45095168px, center 0, center 712.90190337px, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  24.9% {
+    background-position: center -356.45095168px, center 0, center 712.90190337px, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  25% {
+    background-position: center -712.90190337px, center -356.45095168px, center 0, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  37.4% {
+    background-position: center -712.90190337px, center -356.45095168px, center 0, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  37.5% {
+    background-position: center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  49.9% {
+    background-position: center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  50% {
+    background-position: center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  62.4% {
+    background-position: center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  62.5% {
+    background-position: center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 2138.7057101px, center 2495.15666179px;
+  }
+  74.9% {
+    background-position: center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 2138.7057101px, center 2495.15666179px;
+  }
+  75% {
+    background-position: center -2138.7057101px, center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 2495.15666179px;
+  }
+  87.4% {
+    background-position: center -2138.7057101px, center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 2495.15666179px;
+  }
+  88.5% {
+    background-position: center -2495.15666179px, center -2138.7057101px, center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0;
+  }
+  100% {
+    background-position: center -2495.15666179px, center -2138.7057101px, center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0;
+  }
+}
+@keyframes chngbg {
+  0% {
+    background-position: center 0, center 356.45095168px, center 712.90190337px, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  12.4% {
+    background-position: center 0, center 356.45095168px, center 712.90190337px, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  12.5% {
+    background-position: center -356.45095168px, center 0, center 712.90190337px, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  24.9% {
+    background-position: center -356.45095168px, center 0, center 712.90190337px, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  25% {
+    background-position: center -712.90190337px, center -356.45095168px, center 0, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  37.4% {
+    background-position: center -712.90190337px, center -356.45095168px, center 0, center 1069.35285505px, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  37.5% {
+    background-position: center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  49.9% {
+    background-position: center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 1425.80380673px, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  50% {
+    background-position: center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  62.4% {
+    background-position: center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 1782.25475842px, center 2138.7057101px, center 2495.15666179px;
+  }
+  62.5% {
+    background-position: center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 2138.7057101px, center 2495.15666179px;
+  }
+  74.9% {
+    background-position: center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 2138.7057101px, center 2495.15666179px;
+  }
+  75% {
+    background-position: center -2138.7057101px, center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 2495.15666179px;
+  }
+  87.4% {
+    background-position: center -2138.7057101px, center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0, center 2495.15666179px;
+  }
+  88.5% {
+    background-position: center -2495.15666179px, center -2138.7057101px, center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0;
+  }
+  100% {
+    background-position: center -2495.15666179px, center -2138.7057101px, center -1782.25475842px, center -1425.80380673px, center -1069.35285505px, center -712.90190337px, center -356.45095168px, center 0;
+  }
+}

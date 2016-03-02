@@ -1,0 +1,28 @@
+// Colors
+
+$white: #fff;
+$moonGray: #F5F5F5;
+$darkGreen: #13391d;
+$textGray: #A9A9A9;
+$black: #000;
+$nightColor: #391339;
+$dayColor: complement($nightColor);
+$earthBlue: #496b9b;
+$spaceRed: #c62034;
+$spacePurple: #741C58;
+$tourism: #259996;
+$postCardOrange: #F9AF3F;
+$appWhite: #f9f9f9;
+
+// Asset Path Variables
+
+$path-img: "../img";
+
+// Size Variables
+$max-width: 70%;
+
+// Media Queries
+$smallDesktop: "(max-width: 1320px)";
+$fullWidth: "(max-width: 985px)";
+$oneColumn: "(max-width: 767px)";
+$mobile: "(max-width: 505px)";

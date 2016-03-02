@@ -1,0 +1,286 @@
+//==================
+// Row 2 Cards
+//==================
+
+#row2 {
+  overflow: hidden;
+  h3 {
+    @include position(relative, 38% null null null);
+    @include text(24px, normal, $letter-spacing: 2px);
+    text-shadow: 2px 2px 2px black;
+  }
+  hr {
+    @include position(relative, 38% null null null);
+    width: 60%;
+    border: .15em solid $white;
+  }
+  #cardA {
+    @include background-image(linear-gradient(rgba($spaceRed, 0.45),
+    rgba($spaceRed, 0.45)),url("#{$path-img}/copernicus.jpg"));
+    &:hover {
+      h3 {
+        font-size: 2em;
+        -webkit-transition: font-size .3s linear;
+        cursor: pointer;
+      }
+    }
+  }
+  #cardB {
+    @include background-image(linear-gradient(rgba($spacePurple, 0.45),
+    rgba($spacePurple, 0.45)),url("#{$path-img}/moonWalk.gif"));
+    background-size: cover;
+    @media screen and #{$oneColumn} {
+      background-size: contain;
+    }
+    &:hover {
+      h3 {
+        font-size: 2em;
+        -webkit-transition: font-size .3s linear;
+        cursor: pointer;
+      }
+    }
+  }
+  #cardC {
+    @include background-image(linear-gradient(rgba($white, 0.45),
+    rgba($white, 0.45)),url("#{$path-img}/guide.jpg"));
+    background-size: cover;
+    &:hover {
+      -webkit-transform: background-image .2s scale3d(1.2, 1.2, 1);
+              transform: scale3d(1.2, 1.2, 1);
+      h3 {
+        font-size: 1.8em;
+        -webkit-transition: font-size .3s linear;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//==================
+// Row 3 Cards
+//==================
+
+#row3 {
+  #cardA {
+    .cardTop {
+      overflow: hidden;
+      padding: 0px !important;
+      position: relative;
+      .coverVidText {
+        @include text($weight: normal, $letter-spacing: 1.5px);
+        @include position(absolute, 1% null 0 null);
+        @include size(100% 120px);
+        @extend %centeredText;
+        line-height: 1;
+        margin: auto;
+        h1 {
+          @include text(3em);
+          margin: 0;
+          padding-top: .2em;
+          padding-bottom: .5em;
+        }
+      }
+      .masthead-video {
+          object-fit: cover;
+          width: 100%;
+          min-height: 200px;
+      }
+    }
+    .cardBottom {
+      @include background-image(linear-gradient(rgba($tourism, 0.6),
+      rgba($tourism, 0.6)),url("#{$path-img}/spaceLogo.jpg"));
+      background-size: cover;
+      .cardBottomText {
+        @include position(relative, 15% null 0 null);
+        @include text($weight: normal, $letter-spacing: 1.5px);
+        h1 {
+          @include text(3em);
+          margin: 0;
+          padding-bottom: .3em;
+        }
+      }
+    }
+  }
+  #cardB {
+    color: black;
+    @include background-image(linear-gradient(rgba($white, 0.6),
+    rgba($white, 0.6)),url("#{$path-img}/rockets.jpg"));
+    background-size: cover;
+    p:first-child {
+      @include position(relative, 7% null 0 null);
+      @include text($weight: bold, $letter-spacing: 1.5px);
+    }
+    p:nth-child(2) {
+      @include position(relative, 25% null 0 null);
+      @include text($weight: bold, $l-height: 30px, $letter-spacing: 1.5px);
+      @include padding(null 10% null 10%);
+    }
+    @media screen and #{$fullWidth} {
+      p:nth-child(2) {
+        font-size: 25px;
+        @include position(relative, 16% null 0 null);
+      }
+    }
+  }
+  #cardC {
+    .cardTop {
+      background-image: url("#{$path-img}/day-night-moon.png");
+      background-size: cover;
+      opacity: .8;
+      .cardTopText {
+        @include position(relative, 13% null 0 null);
+        @include text($weight: normal, $letter-spacing: 1.5px);
+        p, h1 {
+          text-shadow: 2px 2px 2px black;
+        }
+        h1 {
+          @include text(3em);
+          margin: 0;
+          padding-bottom: .3em;
+        }
+        @media screen and #{$fullWidth} {
+          @include position(relative, 5% null 0 null);
+          }
+      }
+    }
+    .cardBottom {
+      background-image: url("#{$path-img}/gibbous.png");
+      background-size: cover;
+      .cardBottomText {
+        @include position(relative, 13% null 0 null);
+        @include text($weight: normal, $letter-spacing: 1.5px);
+        p, h1 {
+          text-shadow: 2px 2px 2px black;
+        }
+        h1 {
+          @include text(3em);
+          margin: 0;
+          padding-bottom: .3em;
+          @media screen and #{$fullWidth} {
+            @include text(2.3em);
+            padding-bottom: .5em;
+          }
+        }
+        @media screen and #{$fullWidth} {
+          @include position(relative, 5% null 0 null);
+        }
+      }
+    }
+  }
+}
+
+#row4 {
+  overflow: hidden;
+  background: $appWhite;
+  #cardA {
+    background-image: url("#{$path-img}/moonApp.png");
+    background-size: cover;
+    @media screen and #{$fullWidth} {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .appText {
+      @include position(relative, 7% null 0 null);
+      color: black;
+      p {
+        font-size: 13px;
+        text-transform: none;
+      }
+      h3 {
+        font-size: 30px;
+        margin-top: 0px;
+        &:hover {
+          font-size: 2em;
+          -webkit-transition: font-size .3s linear;
+          cursor: pointer;
+          text-shadow: 1px 1px 1px $postCardOrange;
+        }
+      }
+    }
+  }
+  #cardB {
+    background-image: url("#{$path-img}/postCard.png");
+    background-size: cover;
+    opacity: .9;
+    text-align: left;
+    color: black;
+    .postCardText {
+      line-height: 15px;
+      @include padding(5%);
+      margin-top: 45px;
+      p, h5, h3, hr {
+        margin: 10px;
+      }
+      p {
+        margin-top: 0px;
+      }
+      hr {
+        margin: 0;
+      }
+      h3 {
+        font-family: 'Nova Script', cursive;
+        font-size: 1.5em;
+        color: $spaceRed;
+        line-height: 30px;
+      }
+      h5 {
+        margin-bottom: 2px;
+      }
+      @media screen and #{$fullWidth} {
+        margin-top: 10px;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  #cardC {
+    background: shade($postCardOrange, 12%);
+    opacity: .9;
+    p {
+      @include position(relative, 7% null 0 null);
+      @include text($weight: normal, $letter-spacing: 1.5px);
+      text-shadow: 1px 1px 1px $spacePurple;
+    }
+    .socialLinks {
+      @include position(relative, 20% null 0 null);
+      a {
+        @include text(24px, $weight: normal, $letter-spacing: 1.5px, $color: $white);
+        text-shadow: 1px 1px 1px $spacePurple;
+        &:hover {
+          color: $spacePurple;
+          text-shadow: 1px 1px 1px white;
+          font-size: 35px;
+          -webkit-transition: font-size .2s linear;
+        }
+      }
+    }
+    hr {
+      margin: 5% auto 5% auto;
+      width: 60%;
+      @media screen and #{$oneColumn} {
+        margin: 3% auto;
+        width: 30%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//bottom
