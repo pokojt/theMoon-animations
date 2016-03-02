@@ -137,7 +137,6 @@ hr {
 // Shape Effects //
 
 .triangleWrapper {
-  border: 1px solid cyan;
   display: flex;
   margin: 10% auto;
   justify-content: space-around;
@@ -216,10 +215,15 @@ hr {
 
 .squareList {
   display: flex;
-  width: 50%;
+  width: 60%;
   height: 200px;
   margin: 100px;
-  justify-content: space-around;
+}
+
+.squareGroup {
+  display: flex;
+  justify-content: center;
+  width: 22%;
 }
 
 

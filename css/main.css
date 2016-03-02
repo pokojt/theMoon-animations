@@ -237,6 +237,23 @@ html {
     .mobileNav {
       display: inline-block; } }
 
+.menu {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 4%; }
+  .menu ul {
+    padding-left: 0;
+    margin-right: 4.5em;
+    line-height: 30px; }
+  .menu li {
+    list-style-type: none; }
+  .menu h3 {
+    border-bottom: 2px solid black;
+    width: 80%; }
+
 *,
 *::before,
 *::after {
@@ -348,7 +365,6 @@ hr {
   margin: 40px auto; }
 
 .triangleWrapper {
-  border: 1px solid cyan;
   display: flex;
   margin: 10% auto;
   justify-content: space-around;
@@ -412,10 +428,14 @@ hr {
 
 .squareList {
   display: flex;
-  width: 50%;
+  width: 60%;
   height: 200px;
-  margin: 100px;
-  justify-content: space-around; }
+  margin: 100px; }
+
+.squareGroup {
+  display: flex;
+  justify-content: center;
+  width: 22%; }
 
 section.apresenteichan {
   width: 100%;

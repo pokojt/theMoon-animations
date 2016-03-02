@@ -63,3 +63,25 @@
     display: inline-block;
   }
 }
+
+
+.menu {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  ul {
+    padding-left: 0;
+    margin-right: 4.5em;
+    line-height: 30px;
+  }
+  li {
+    list-style-type: none;
+  }
+  h3 {
+    border-bottom: 2px solid black;
+    width: 80%;
+  }
+}
